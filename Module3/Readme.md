@@ -480,3 +480,99 @@ light_mode
 синхронізація
 
 
+3.1.13 РЕЗЮМЕ РОЗДІЛУ
+1. Оператори порівняння (інакше відомі як реляційні ) використовуються для порівняння значень. У наведеній нижче таблиці показано, як працюють оператори порівняння, припускаючи, що x = 0, y = 1та z = 0:
+
+2. Якщо ви хочете виконати певний код лише за умови виконання певної умови, ви можете використати умовний оператор :
+
+Одинокийякщозаява, наприклад:
+
+x = 10
+ 
+if x == 10: # condition
+    print("x is equal to 10")  # Executed if the condition is True.
+ 
+серіяякщозаяви, наприклад:
+
+x = 10
+ 
+if x > 5: # condition one
+    print("x is greater than 5")  # Executed if condition one is True.
+ 
+if x < 10: # condition two
+    print("x is less than 10")  # Executed if condition two is True.
+ 
+if x == 10: # condition three
+    print("x is equal to 10")  # Executed if condition three is True.
+ 
+    Коженякщотвердження перевіряється окремо.
+
+анякщо-інакшезаява, наприклад:
+
+x = 10
+ 
+if x < 10: # condition
+    print("x is less than 10")  # Executed if the condition is True.
+ 
+else:
+    print("x is greater than or equal to 10")  # Executed if the condition is False.
+ 
+серіяякщозаяви, за якими йде anінше, наприклад:
+
+x = 10
+ 
+if x > 5: # condition one
+    print("x is greater than 5")  # Executed if condition one is True.
+ 
+if x < 10: # condition two
+    print("x is less than 10")  # Executed if condition two is True.
+ 
+if x == 10: # condition three
+     print("x is equal to 10")  # Executed if condition three is True.
+ 
+    Коженякщотестується окремо. Тілоіншевиконується, якщо останнійякщоєпомилковий.
+
+Theякщо-еліф-іншезаява, наприклад:
+
+x = 10
+ 
+if x == 10: # True
+    print("x == 10")
+ 
+if x > 15: # False
+    print("x > 15")
+ 
+elif x > 10: # False
+    print("x > 10")
+ 
+elif x > 5: # True
+    print("x > 5")
+ 
+else:
+    print("else will not be executed")
+ 
+    Якщо умова дляякщоєпомилковий, програма перевіряє умови подальшогоelifблоки - першelifблок, тобтоправдавиконується. Якщо всі умови єпомилковий,іншеблок буде виконано.
+
+Вкладені умовні оператори, наприклад:
+
+x = 10
+ 
+if x > 5: # True
+    if x == 6: # False
+        print("nested: x == 6")
+    elif x == 10: # True
+        print("nested: x == 10")
+    else:
+        print("nested: else")
+else:
+    print("else")
+ 
+
+![img_2.png](img_2.png)
+
+
+
+3.2. Section 2 – Loops in Python
+
+
+
