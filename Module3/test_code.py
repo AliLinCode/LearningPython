@@ -1,5 +1,2 @@
-counter = 5
-while counter:
-    print("Inside the loop.", counter)
-    counter -= 1
-print("Outside the loop.", counter)
+for i in range(1,1):
+    print("The value of i is currently", i)
