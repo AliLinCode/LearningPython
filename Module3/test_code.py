@@ -1,6 +1,8 @@
-my_list = []  # Creating an empty list.
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
 
-for i in range(5, 10):
-    my_list.append(i + 1)
+for i in range(1, len(my_list)):
+    if my_list[i] > largest:
+        largest = my_list[i]
 
-print(my_list)
+print(largest)
