@@ -1,18 +1,6 @@
-# break - example
+my_list = []  # Creating an empty list.
 
-print("The break instruction:")
-for i in range(1, 6):
-    if i == 3:
-        break
-    print("Inside the loop.", i)
-print("Outside the loop.")
+for i in range(5, 10):
+    my_list.append(i + 1)
 
-
-# continue - example
-
-print("\nThe continue instruction:")
-for i in range(1, 6):
-    if i == 3:
-        continue
-    print("Inside the loop.", i)
-print("Outside the loop.")
+print(my_list)
