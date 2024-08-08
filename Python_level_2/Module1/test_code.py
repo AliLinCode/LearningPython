@@ -1,18 +1,4 @@
-from platform import platform as JD
-from platform import machine
-from platform import processor
-from platform import system
-import platform
-print(len(platform.python_version_tuple()))
+from random import randint
 
-
-print(system())
-print(JD())
-print(JD(1))
-print(JD(0, 1))
-
-
-print(processor())
-
-
-print(machine())
+for i in range(2):
+    print(randint(1, 2), end='')
